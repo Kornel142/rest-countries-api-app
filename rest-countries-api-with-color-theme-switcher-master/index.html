@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/country.css" />
+    <script defer src="js/controller.js" type="module"></script>
+    <title>Countries-app</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1 class="main-head-logo">Where in the word?</h1>
+      <button class="dark-theme-btn">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="w-6 h-6 moon-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M21.752 15.002A9.718 9.718 0 0118 15.75c-5.385 0-9.75-4.365-9.75-9.75 0-1.33.266-2.597.748-3.752A9.753 9.753 0 003 11.25C3 16.635 7.365 21 12.75 21a9.753 9.753 0 009.002-5.998z"
+          />
+        </svg>
+        <div class="theme-text">Dark Mode</div>
+      </button>
+    </header>
+
+    <!--Main-->
+    <main>
+      <!-- Filter Section -->
+      <section class="filter-section">
+        <form class="search-form">
+          <button class="search-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6 search-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+          </button>
+          <input
+            type="text"
+            class="search-input"
+            placeholder="Search for a country..."
+          />
+        </form>
+        <select class="filter-by-region">
+          <option value="">Filter by region</option>
+          <option value="Africa">Africa</option>
+          <option value="Americas">America</option>
+          <option value="Asia">Asia</option>
+          <option value="Europe">Europe</option>
+          <option value="Oceania">Oceania</option>
+        </select>
+      </section>
+      <!-- Country Section -->
+      <section class="country-section">
+        <!-- Detail Box -->
+        <!-- <button class="back-btn">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6 arrow-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"
+            />
+          </svg>
+          Back
+        </button>
+        <div class="detail-box">
+          <img src="https://flagcdn.com/w320/ir.png" class="detail-flag" />
+          <div class="detail-info">
+            <h1 class="country-name">Belgium</h1>
+            <ul class="detail-info-list first-list">
+              <li class="info-item">
+                <strong class="info">
+                  Native Name: <span class="data">Belgie</span>
+                </strong>
+              </li>
+              <li class="info-item">
+                <strong class="info">
+                  Population: <span class="data">Asia</span>
+                </strong>
+              </li>
+              <li class="info-item">
+                <strong class="info">
+                  Region: <span class="data">Europe</span>
+                </strong>
+              </li>
+              <li class="info-item">
+                <strong class="info">
+                  Sub Region: <span class="data">Western Europe</span>
+                </strong>
+              </li>
+              <li class="info-item">
+                <strong class="info">
+                  Capital: <span class="data">Brussles</span>
+                </strong>
+              </li>
+            </ul>
+            <ul class="detail-info-list second-list">
+              <li class="info-item">
+                <strong class="info">
+                  Top Level Domain: <span class="data">.be</span>
+                </strong>
+              </li>
+              <li class="info-item">
+                <strong class="info">
+                  Currencies: <span class="data">Euro</span>
+                </strong>
+              </li>
+              <li class="info-item">
+                <strong class="info">
+                  Languages: <span class="data">Dutch,French, Germany</span>
+                </strong>
+              </li>
+            </ul>
+            <span class="border-top">Border countries:</span>
+            <ul class="border-countries">
+              <li class="border-c">France</li>
+              <li class="border-c">Germany</li>
+              <li class="border-c">Europe</li>
+            </ul>
+          </div>
+        </div> -->
+      </section>
+    </main>
+  </body>
+</html>
