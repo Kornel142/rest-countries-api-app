@@ -12,9 +12,6 @@ const controlCountries = async function () {
   try {
     // Dark Theme
     themeView.onLoad();
-    // console.log(window.location.href);
-    console.log(window.location.search);
-
 
     // Wait for data
     await model.loadCountries();
