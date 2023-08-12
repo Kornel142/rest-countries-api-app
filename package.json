@@ -4,7 +4,7 @@
   },
   "name": "rest-countries-api-with-color-theme-switcher-master",
   "version": "1.0.0",
-  "main": "index.js",
+  "default": "index.js",
   "type": "module",
   "dependencies": {
     "abortcontroller-polyfill": "^1.7.5",
@@ -106,7 +106,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel rest-countries-api-with-color-theme-switcher-master/index.html",
-    "build": "parcel build rest-countries-api-with-color-theme-switcher-master/index.html"
+    "build": "parcel build rest-countries-api-with-color-theme-switcher-master/index.html --dist-dir ./dist"
   },
   "repository": {
     "type": "git",

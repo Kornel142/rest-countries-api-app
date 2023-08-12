@@ -12,6 +12,9 @@ const controlCountries = async function () {
   try {
     // Dark Theme
     themeView.onLoad();
+    // console.log(window.location.href);
+    console.log(window.location.search);
+
 
     // Wait for data
     await model.loadCountries();
@@ -30,8 +33,8 @@ const controlDetailCountry = async function () {
     themeView.onLoad();
 
     // Get Params
-    const params = new URLSearchParams(window.location.pathname.slice(1));
-    const countryCode = params.get("code");
+    const params = new URLSearchParams(window.location.search);
+    const countryCode = params.get("country");
 
     // Wait for data
     await model.loadCountriesDetails(countryCode);
@@ -56,6 +59,7 @@ const controlOptions = function (option) {
   optionsView.render(model.state.options.countriesOfRegion);
 };
 
+// Dark Theme
 const controlThemeMode = function (mode) {
   model.loadThemeMode(mode);
   console.log(model.state);
@@ -63,7 +67,7 @@ const controlThemeMode = function (mode) {
 
 const init = function () {
   // View
-  if (window.location.pathname.slice(1).includes("code=")) {
+  if (window.location.search.includes("?country=")) {
     controlDetailCountry();
     detailView.changeClass();
   } else {

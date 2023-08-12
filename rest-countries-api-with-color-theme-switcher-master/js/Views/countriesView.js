@@ -11,7 +11,7 @@ class CountriesView extends Views {
 
   _generateMarkupPreview(result) {
     return `
-   <a class="country-container" href="code=${result.code}">
+   <a class="country-container" href="?country=${result.code}">
       <img
         src="${result.flag}"
         class="country-flag"
